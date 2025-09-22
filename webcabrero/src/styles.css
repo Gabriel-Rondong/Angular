@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  /* Paleta institucional aproximada */
+  --verde: #116530;          /* barra superior */
+  --amarillo: #f4b400;       /* franja destacada */
+  --texto: #1f2937;          /* gris oscuro */
+  --blanco: #ffffff;
+  --gris-claro: #f5f5f5;
+
+  --max-w: 1200px;           /* ancho de contenido */
+  --shadow: 0 6px 18px rgba(0,0,0,.012);
+}
+
+/* Reseteo mínimo y tipografía base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--texto);background:var(--gris-claro)}
+
+/* Contenedor centrado reutilizable */
+.container{
+  max-width: var(--max-w);
+  margin-inline:auto;
+  padding-inline: 16px;
+}
+
+/* Accesibilidad: enfoque visible */
+:where(a,button,[role="button"]):focus-visible{
+  outline: 3px solid #0ea5e9; outline-offset: 2px;
+}
+
+/* Utilidades pequeñas */
+.hidden-sm{ display:none }
+@media (min-width: 768px){
+  .hidden-sm{ display:initial }
+}

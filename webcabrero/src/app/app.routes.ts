@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './features/home/home';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
+  // aquí podrás ir agregando más rutas (noticias, contacto, etc.)
+  { path: '**', redirectTo: '' }
+];
