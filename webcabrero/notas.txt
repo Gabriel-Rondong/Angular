@@ -23,8 +23,7 @@ Colores:
 
 
 tareas:
-  - añadir imagenes de las noticias
-  - crear paginas
+  - CREAR FORMULARIO
   - añadir redes sociales al footer
   - cambiar lo del copyright por la informacion del footer de la municipalidad
 
@@ -37,3 +36,6 @@ tareas:
   .card__img{ height:200px }
   .card{ grid-column: span 3 }
 }
+
+
+
