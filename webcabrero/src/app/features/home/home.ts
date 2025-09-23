@@ -17,14 +17,7 @@ type Noticia = {
   styleUrl: './home.css'
 })
 export class HomeComponent {
-  // Imagen grande (hero)
-  hero = {
-    src: 'assets/hero-cabrero.jpg',
-    alt: 'Nuestra fiesta en el progreso',
-    titulo: 'Nuestra fiesta en el progreso',
-  };
 
-  // Mock de noticias (puedes reemplazar por servicio real luego)
   noticias: Noticia[] = [
     {
       id: 1,

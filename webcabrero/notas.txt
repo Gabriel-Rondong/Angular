@@ -24,3 +24,6 @@ Colores:
 
 tareas:
   - extraer noticias del home
+  - añadir redes sociales al footer
+
+

@@ -1,10 +1,10 @@
 .topbar {
-  background: var(--verde); /* verde institucional */
+  background: var(--verde);
   color: white;
   padding: 0.5rem 1rem;
 }
 
-.topbar__row {
+.topbar_row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,53 +27,10 @@
   font-size: 1rem;
 }
 
-/* Menú */
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav a,
-.nav__dropbtn {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.nav a:hover,
-.nav__dropbtn:hover {
-  background: #004d26;
-  border-radius: 5px;
-}
-
-.nav--open{ transform: translateY(0) }
-
-@media (min-width: 992px){
-  .nav{
-    position:static; transform:none; background:transparent; flex-direction:row; margin-left:auto; padding:0; gap:4px;
-  }
-}
-
-/* Dropdown (desktop) */
-.nav__dropdown{ position:relative }
-.nav__dropbtn{ background:transparent; border:0; cursor:pointer }
-.nav__menu{
-  position:absolute; top:100%; left:0; min-width:220px;
-  background:#0d4b24; padding:6px; border-radius:8px; display:none; box-shadow: var(--shadow);
-}
-.nav__dropdown:hover .nav__menu{ display:block }
-.nav__menu a{ display:block }
-
-/* Franja amarilla para banners */
-.strip{
+.legal_info_container{
   background: var(--amarillo);
   padding-block: 10px;
 }
-.strip__row{
+.legal_info_row{
   display:flex; gap:14px; align-items:center; justify-content:center; flex-wrap:wrap;
-}
-.strip__row img{
-  height:52px; width:auto; object-fit:contain; filter: drop-shadow(0 1px 1px rgba(0,0,0,.1));
 }

@@ -1,86 +1,21 @@
+
 <header class="topbar">
-  <div class="container topbar__row">
-   
+  <div class="topbar_row">
     <a class="brand" routerLink="/" aria-label="Municipalidad de Cabrero">
       <img src="assets/logo-cabrero.svg" alt="Logo Municipalidad de Cabrero" class="brand__img" />
       <span class="brand__name hidden-sm">Ilustre Municipalidad de Cabrero</span>
     </a>
-
-    
-    <button class="nav-toggle" (click)="toggle()" aria-expanded="{{open}}" aria-controls="mainmenu" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
-
-   
-    <nav id="mainmenu" class="nav" [class.nav--open]="open">
-      <a routerLink="/" (click)="close()">Home</a>
-      <a routerLink="/cabrero" (click)="close()">Cabrero</a>
-
-      
-      <div class="nav__dropdown" (mouseleave)="close()">
-        <button class="nav__dropbtn" aria-haspopup="true" aria-expanded="false">Municipio</button>
-        <div class="nav__menu">
-          <a routerLink="/alcaldia" (click)="close()">Alcaldía</a>
-          <a routerLink="/concejo" (click)="close()">Concejo</a>
-          <a routerLink="/direcciones" (click)="close()">Direcciones</a>
-        </div>
-      </div>
-
-     
-      <div class="nav__dropdown" (mouseleave)="close()">
-        <button class="nav__dropbtn" aria-haspopup="true" aria-expanded="false">Servicios</button>
-        <div class="nav__menu">
-          <a routerLink="/informacion" (click)="close()">Información Útil</a>
-          <a routerLink="/seguridad" (click)="close()">Seguridad Pública</a>
-          <a routerLink="/medioambiente" (click)="close()">Medioambiente</a>
-          <a routerLink="/farmacia" (click)="close()">Farmacia Municipal</a>
-          <a routerLink="/veterinaria" (click)="close()">Clínica Veterinaria Móvil</a>
-          <a routerLink="/juzgado" (click)="close()">Juzgado Policía Local</a>
-        </div>
-      </div>
-
-  
-      <div class="nav__dropdown" (mouseleave)="close()">
-        <button class="nav__dropbtn" aria-haspopup="true" aria-expanded="false">Trámites</button>
-        <div class="nav__menu">
-          <a routerLink="/licencia" (click)="close()">Licencia de Conducir</a>
-          <a routerLink="/permiso" (click)="close()">Permiso de Circulación</a>
-          <a routerLink="/patentes" (click)="close()">Patentes</a>
-          <a routerLink="/partes" (click)="close()">Pago de partes</a>
-          <a routerLink="/vecinales" (click)="close()">Trámites vecinales</a>
-          <a routerLink="/proveedores" (click)="close()">Consulta pago proveedores</a>
-        </div>
-      </div>
-
-      
-      <div class="nav__dropdown" (mouseleave)="close()">
-        <button class="nav__dropbtn" aria-haspopup="true" aria-expanded="false">Turismo</button>
-        <div class="nav__menu">
-          <a routerLink="/fiestas" (click)="close()">Fiestas Costumbristas</a>
-          <a routerLink="/salto-laja" (click)="close()">Salto del Laja</a>
-        </div>
-      </div>
-
-   
-      <div class="nav__dropdown" (mouseleave)="close()">
-        <button class="nav__dropbtn" aria-haspopup="true" aria-expanded="false">Comunicaciones</button>
-        <div class="nav__menu">
-          <a routerLink="/noticias" (click)="close()">Noticias</a>
-        </div>
-      </div>
-
-      <a routerLink="/ley-19418" (click)="close()">Ley N° 19.418</a>
-      <a routerLink="/guia-comercio" (click)="close()">Guía de Comercio Local</a>
-    </nav>
+    <a routerLink="/cabrero">Cabrero</a>
+    <a routerLink="/cabrero">Municipio</a>
   </div>
 </header>
 
-<!-- Franja amarilla para banners -->
-<div class="strip">
-  <div class="container strip__row">
-    <img src="assets/banner-lobby.png" alt="Plataforma Ley del Lobby" />
-    <img src="assets/banner-transparencia1.png" alt="Solicitar información" />
-    <img src="assets/banner-transparencia2.png" alt="Transparencia Activa" />
-    <img src="assets/banner-scam.png" alt="SCAM" />
+<div class="legal_info_container">
+  <div class="legal_info_row">
+    <a href="/lobby" class="legal_info_link">Ley del Lobby</a>
+    <a href="/solicitar-informacion" class="legal_info_link">Solicitar información</a>
+    <a href="/transparencia-activa" class="legal_info_link">Transparencia Activa</a>
+    <a href="/scam" class="legal_info_link">SCAM</a>
   </div>
 </div>
+
