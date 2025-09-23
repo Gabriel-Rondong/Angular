@@ -10,14 +10,13 @@ type Noticia = {
 };
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-news',
   standalone: true,
   imports: [CommonModule, DatePipe],
-  templateUrl: './home.html',
-  styleUrl: './home.css'
+  templateUrl: './news.html',
+  styleUrl: './news.css'
 })
-export class HomeComponent {
-
+export class NewsComponent {
   noticias: Noticia[] = [
     {
       id: 1,
