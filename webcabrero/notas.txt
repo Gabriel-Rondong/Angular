@@ -23,7 +23,17 @@ Colores:
 
 
 tareas:
-  - extraer noticias del home
+  - añadir imagenes de las noticias
+  - crear paginas
   - añadir redes sociales al footer
+  - cambiar lo del copyright por la informacion del footer de la municipalidad
 
 
+@media (min-width: 640px){
+  .card__img{ height:210px }
+  .card{ grid-column: span 6 }
+}
+@media (min-width: 1024px){
+  .card__img{ height:200px }
+  .card{ grid-column: span 3 }
+}
