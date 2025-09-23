@@ -1,5 +1,5 @@
 .topbar {
-  background: #006633; /* verde institucional */
+  background: var(--verde); /* verde institucional */
   color: white;
   padding: 0.5rem 1rem;
 }
