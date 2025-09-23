@@ -8,7 +8,7 @@
           <h3 class="card-title" [id]="'tit-'+n.id">{{ n.titulo }}</h3>
           <p class="card-date">{{ n.fecha | date:'longDate' }}</p>
           <p class="card-description">{{ n.bajada }}</p>
-          <a class="card-link" href="javascript:void(0)" aria-label="Leer: {{n.titulo}}">Leer más</a>
+          <a class="card-link" [href]="n.link" aria-label="Leer: {{n.titulo}}">Leer más</a>
         </div>
       </article>
     }
