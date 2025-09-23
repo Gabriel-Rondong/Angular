@@ -1,0 +1,30 @@
+
+<form #contactForm="ngForm" (ngSubmit)="enviar()">
+  <h2>Escríbenos</h2>
+
+  <input
+  type="text"
+  name="nombre"
+  placeholder="Nombre"
+  [(ngModel)]="formData.nombre"
+  required
+  />
+  <input
+  type="email"
+  name="correo"
+  placeholder="Correo"
+  [(ngModel)]="formData.correo"
+  required
+  email
+  />
+
+  <textarea
+    name="mensaje"
+    placeholder="Escribe tu mensaje aquí"
+    [(ngModel)]="formData.mensaje"
+    required
+  ></textarea>
+
+  <button type="submit" [disabled]="!contactForm.valid">Enviar</button>
+</form>
+
